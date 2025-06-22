@@ -1,6 +1,6 @@
 # Koa Advanced Boilerplate
 
-![CI](https://github.com/ubudab109/koa-advanced-boilerplate/actions/workflows/test.yml/badge.svg?branch=main)
+![CI](https://github.com/ubudab109/koa-advanced-boilerplate/actions/workflows/test.yml/badge.svg?branch=master)
 
 A fully-featured and scalable Koa.js boilerplate with TypeScript, MySQL, Authentication, Middleware architecture, Rate Limiting, and CI integration.
 
@@ -119,9 +119,6 @@ Runs on every push to `main` and `development`:
 - Sets up MySQL test container
 - Deploys migrations
 - Runs test suite
-
-Badge:
-![CI](https://github.com/ubudab109/koa-advanced-boilerplate/actions/workflows/test.yml/badge.svg?branch=master)
 
 ---
 
