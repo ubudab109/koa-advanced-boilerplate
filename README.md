@@ -125,6 +125,3 @@ Badge:
 
 ---
 
-## 📄 License
-
-MIT
