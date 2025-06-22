@@ -23,11 +23,21 @@ jobs:
           --health-interval=10s
           --health-timeout=5s
           --health-retries=5
+      redis:
+        image: redis:6
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
 
     env:
       DATABASE_URL: mysql://root:root@127.0.0.1:3306/koa_test_db
       SESSION_KEY: test_ci_secret
       JWT_SECRET: ci_jwt_secret
+      REDIS_URL: redis://localhost:6379
 
     steps:
       - name: Checkout Repo

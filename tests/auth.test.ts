@@ -1,6 +1,6 @@
 import request from 'supertest';
 import app from '../src/app';
-import { PrismaClient } from '@prisma/client';
+import { PrismaClient } from '../src/generated/prisma';
 
 const prisma = new PrismaClient();
 const server = app.callback(); // Koa needs .callback() for supertest

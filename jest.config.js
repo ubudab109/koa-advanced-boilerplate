@@ -9,4 +9,7 @@ module.exports = {
     ...tsJestTransformCfg,
   },
   setupFilesAfterEnv: ['./jest.setup.ts'],
+  testEnvironment: 'node',
+  detectOpenHandles: true,
+  forceExit: true,
 };
